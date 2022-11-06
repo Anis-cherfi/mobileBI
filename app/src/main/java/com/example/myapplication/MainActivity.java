@@ -38,16 +38,18 @@ public class MainActivity extends AppCompatActivity {
                 Boolean valid= Boolean.TRUE;
                 if(userstr.matches("")){
                     txterroruserjava.setText("Ce champ est requis!");
+                    valid= Boolean.FALSE;
                 }else{
                     txterroruserjava.setText("");
-                    valid= Boolean.FALSE;
+                   
                 }
 
                 if(pwdstr.matches("")){
                     txterrorpwdjava.setText("Ce champ est requis!");
+                    valid= Boolean.FALSE;
                 }else{
                     txterrorpwdjava.setVisibility(View.INVISIBLE);
-                    valid= Boolean.FALSE;
+                    
                 }
 
                 if(valid){
